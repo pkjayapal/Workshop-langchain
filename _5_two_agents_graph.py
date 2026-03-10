@@ -6,6 +6,18 @@ from langchain.agents import create_agent
 from langchain_core.tools import tool
 from langgraph.graph import StateGraph, MessagesState, START
 
+
+##
+## Two Agents with LangGraph Example ##
+##
+## This example demonstrates a multi-agent workflow with LangGraph,
+## which allows for more complex interactions and state management between agents.
+##      
+## Agent 1 (Researcher) uses a web search tool to gather information on a topic
+## Agent 2 (Writer) uses a file-saving tool to write and save a blog post 
+##
+
+
 from tools.search import search_web
 from tools.savefile import save_to_file
 from tools.handoff import handoff_to_writer
