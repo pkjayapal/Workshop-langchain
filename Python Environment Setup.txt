@@ -1,0 +1,36 @@
+Python Environment Setup
+
+1. Create a folder 
+2. Open VS Code and then open that folder
+3. Open VS Code and go to the Extensions view (Ctrl+Shift+X).
+4. Search for and install the Python extension by Microsoft.
+5. Open a new terminal (Ctrl+Shift+`). (Cmd Terminal)
+6. python -m venv .venv (Creates virtual environment)
+7. .\.venv\Scripts\activate (Activates the terminal and you have a PS window)
+8. pip install langchain langchain-openai (Install langchain or other libraries)
+9. Create a .env file (to store environment variables and keys)
+10. Create a hello.py
+
+import os
+from dotenv import load_dotenv
+from langchain_openai import ChatOpenAI
+
+# Load the API key from your .env file
+load_dotenv()
+
+# 1. Initialize the LLM (using a cost-efficient model)
+llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.7)
+
+# 2. Ask a simple question
+question = "Say 'Hello World' and tell me one cool thing LangChain can do."
+
+# 3. Invoke the model and print the result
+response = llm.invoke(question)
+print(response.content)
+
+11. From terminal run python hello.py
+
+
+
+
+
