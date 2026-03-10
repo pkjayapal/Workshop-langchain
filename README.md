@@ -11,14 +11,14 @@ APIs: SerpApi (Google Flights)
 APIs: Tavily
 Tool: Save File
 
-#📋 Prerequisites
+# 📋 Prerequisites
 Python 3.9+
 API Keys:
 OpenAI API Key
 SerpApi Key
 Tavily Key
 
-##⚙️ Installation
+## ⚙️ Installation
 Clone the repository:
 ```
 bash
@@ -54,7 +54,7 @@ TAVILY_API_KEY=your_tavily_key_here
 ```
 Use code with caution.
 
-##📂 Project Structure
+## 📂 Project Structure
 ```
 .
 ├── output/              # Generated flight reports
